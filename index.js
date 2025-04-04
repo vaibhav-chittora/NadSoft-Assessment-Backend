@@ -1,9 +1,9 @@
 import express from "express";
 import cors from "cors";
 import morgan from "morgan";
-import connectDB from "./config/db.js";
-import routes from "./routes/apiRouter.js";
-import { PORT } from "./config/serverConfig.js";
+import connectDB from "./src/config/db.js";
+import routes from "./src/routes/apiRouter.js";
+import { PORT } from "./src/config/serverConfig.js";
 
 // Initialize Express App
 const app = express();
