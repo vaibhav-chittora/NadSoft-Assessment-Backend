@@ -18,7 +18,7 @@ export async function getAllStudents(page = 1, limit = 10) {
   return {
     students,
     totalStudents,
-    totalPages: Math.ceil(totalStudents / limit) || 1,
+    totalPages: Math.ceil(totalStudents / limit),
     currentPage: page,
   };
 }
